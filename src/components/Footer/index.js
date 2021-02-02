@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
   background-color: #00000070;
@@ -43,5 +43,3 @@ export default function Footer(props) {
     </FooterWrapper>
   );
 }
-
-
