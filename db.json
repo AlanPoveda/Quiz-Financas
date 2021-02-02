@@ -1,12 +1,12 @@
 {
     "bg": "https://cdn.pixabay.com/photo/2017/10/25/19/46/piggy-bank-2889046_960_720.jpg",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "title": "Quiz de Finanças Pessoais 💰",
+    "description": "Aprenda sobre finanças pessoais, de forma fácil e simples",
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "title": "Vamos aprender sobre finanças?",
+        "description": "super pergunta",
         "answer": 2,
         "alternatives": [
           ".elemento",
