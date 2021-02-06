@@ -4,7 +4,7 @@
     "description": "Aprenda sobre finanças pessoais, de forma fácil e simples",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "image": "https://media.giphy.com/media/67ThRZlYBvibtdF9JH/giphy.gif",
         "title": "Vamos aprender sobre finanças?",
         "description": "Quando você deve economizar todo mês em média do seu salário?",
         "answer": 2,
@@ -12,17 +12,19 @@
           ".20%",
           "*50%",
           "#10%",
-          "%Não importa quanto, mas sim algo kkk"
+          "Não importa quanto, mas tem que economizar algo"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "image": "https://media.giphy.com/media/14SAx6S02Io1ThOlOY/giphy.gif",
         "title": "O que é fazer render o seu dinheiro?",
         "description": "Marque a alternativa do que é render o teu dinheiro?",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Fazer ele se multiplicar",
+           "Guardar ele no cofrinho",
+           "Aumentar seu montante inicial"
+
         ]
       }
     ],

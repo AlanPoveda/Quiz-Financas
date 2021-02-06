@@ -16,9 +16,15 @@ function LoadingWidget(){
             <Widget.Header>
                 <h1>Carregando...</h1>
             </Widget.Header>
-            <Widget.Content>
-                <h1>[Colocar sprite da moeda]</h1>
-            </Widget.Content>
+                <img 
+                style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                }}
+                    src="https://media.giphy.com/media/Hx13ouuEzEff1GbcpJ/giphy.gif"
+                />
+            
         </Widget>
     );
 };
@@ -44,7 +50,7 @@ onSubmit, }) {
             height: '150px',
             objectFit: 'cover',
         }}
-            src="https://placehold.it/400x400"
+            src={question.image}
         />
         <Widget.Content>
             <h2>{question.title}</h2>
@@ -82,6 +88,17 @@ onSubmit, }) {
 
     );
 };
+
+function ResultWidget(){
+
+    return(
+        <Widget>
+            <Widget.Content>
+                <h1>[Acertou x pontos]</h1>
+            </Widget.Content>
+        </Widget>
+    )
+}
 
 const screenStates = {
     QUIZ: "QUIZ",
@@ -127,7 +144,7 @@ export default function QuizPage( ) {
         )}
             {screenState === screenStates.LOADING && <LoadingWidget />}
 
-            {screenState === screenStates.RESULT && <div>Acertou X questões Miserável</div>}
+            {screenState === screenStates.RESULT && <ResultWidget />}
         
         </QuizContainer>
         <GitHubCorner projectUrl="https://github.com/AlanPoveda"/>
