@@ -94,7 +94,7 @@ function ResultWidget(){
     return(
         <Widget>
             <Widget.Content>
-                <h1>[Acertou x pontos]</h1>
+                <h1>[Acertou x pontos Miserável]</h1>
             </Widget.Content>
         </Widget>
     )
