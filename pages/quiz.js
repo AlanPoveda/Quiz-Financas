@@ -7,7 +7,6 @@ import QuizBackground from '../src/components/QuizBackground';
 import GitHubCorner from '../src/components/GitHubCorner';
 import Button from '../src/components/Button';
 import QuizContainer  from '../src/components/QuizContainer';
-import CoinSprite  from '../src/components/Coin';
 
 
 function LoadingWidget(){
@@ -34,7 +33,10 @@ question,
 totalQuestions, 
 questionIndex,
 onSubmit, }) {
+    const [ selectAlternative, setSelectedAlternative ] = useState(undefined);
+    const [isQuestionSubmited, setIsQuestionSubmited] = useState(false);
     const questionId = `question__${questionIndex}`;
+    const isCorret = selectAlternative === question.answer ;
     
     return(
         <Widget>
@@ -66,12 +68,14 @@ onSubmit, }) {
                 return (
                     <Widget.Topic
                         as="label"
+                        key={alternativeId}
                         htmlFor={alternativeId}
                     >
                         <input
                             id={alternativeId}
                             type="radio"
                             name={questionId}
+                            onChange={()=> setSelectedAlternative(alternativeIndex)}
                         />
                         {alternative}
                     </Widget.Topic>
@@ -80,6 +84,9 @@ onSubmit, }) {
             <Button type="submit">
                 Confirmar
             </Button>
+
+            { isCorret && <p>Você Acertou :D !</p> }
+            { !isCorret && <p>Você Errou :/ !</p>}
             </form>
 
         </Widget.Content>
@@ -93,9 +100,7 @@ function ResultWidget(){
 
     return(
         <Widget>
-            <Widget.Content>
-                <h1>[Acertou x pontos Miserável]</h1>
-            </Widget.Content>
+            <h1>[Acertou x pontos Miserável]</h1>
         </Widget>
     )
 }
@@ -105,6 +110,7 @@ const screenStates = {
     LOADING:"LOADING",
     RESULT:"RESULT",
 };
+
 export default function QuizPage( ) {
     const [screenState , setScreenState ] = useState(screenStates.LOADING);
     const totalQuestions = db.questions.length;
@@ -122,9 +128,9 @@ export default function QuizPage( ) {
     
     //Aonde esta fazendo a contagem para ir para a próxima questão
     function handleSubmit(){
-        
-        if (currentQuestion < totalQuestions){
-            setCurrentQuestion(questionIndex + 1)    
+        const nextQuestion = questionIndex + 1;        
+        if (nextQuestion < totalQuestions){
+            setCurrentQuestion(nextQuestion)    
         }else {
             setScreenState(screenStates.RESULT);
         }
