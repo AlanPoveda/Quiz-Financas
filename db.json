@@ -9,9 +9,9 @@
         "description": "Quando você deve economizar todo mês em média do seu salário?",
         "answer": 3,
         "alternatives": [
-          ".20%",
-          "*50%",
-          "#10%",
+          "20%",
+          "50%",
+          "10%",
           "Não importa quanto, mas tem que economizar algo"
         ]
       },
@@ -24,7 +24,63 @@
            "Fazer ele se multiplicar",
            "Guardar ele no cofrinho",
            "Aumentar seu montante inicial"
-
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/14SAx6S02Io1ThOlOY/giphy.gif",
+        "title": "Quanto rende a poupança?",
+        "description": "Marque a alternativa do que é render o teu dinheiro?",
+        "answer": 3,
+        "alternatives": [
+           "100% selic",
+           "86% selic",
+           "124% selic",
+           "70% selic"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/14SAx6S02Io1ThOlOY/giphy.gif",
+        "title": "O tipo de resgate do dinheiro da poupança com rendimento, é:",
+        "description": "Marque a alternativa do que é render o teu dinheiro?",
+        "answer": 0,
+        "alternatives": [
+           "Data de aniversário",
+           "D0",
+           "D1",
+           "D3"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/14SAx6S02Io1ThOlOY/giphy.gif",
+        "title": "O cartão de crédito é para usar ele:",
+        "description": "Marque a alternativa do que é render o teu dinheiro?",
+        "answer": 2,
+        "alternatives": [
+           "Como complemento de renda",
+           "Comprar itens quando não se tem o dinheiro",
+           "Como ferramenta de organização financeira"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/14SAx6S02Io1ThOlOY/giphy.gif",
+        "title": "Uma dívida depois de 5 anos, o que acontece com ela se não for paga?",
+        "description": "Marque a alternativa do que é render o teu dinheiro?",
+        "answer": 1,
+        "alternatives": [
+           "Ela é tirada do seu CPF",
+           "Ela some do serasa mas continua devendo para a empresa",
+           "É zerada a dívida tanto da empresa, quanto do cpf e serasa"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/14SAx6S02Io1ThOlOY/giphy.gif",
+        "title": "Parar manter uma vida financeira saudável:",
+        "description": "Marque a alternativa do que é render o teu dinheiro?",
+        "answer": 1,
+        "alternatives": [
+           "Ganhe mais para gastar mais",
+           "Gaste menos do que se ganha",
+           "É necessário guardar sempre não importa a circunstância"
         ]
       }
     ],
