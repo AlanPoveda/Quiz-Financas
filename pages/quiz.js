@@ -117,7 +117,7 @@ function ResultWidget({ results }){
                 <h1>Tela de resultado.</h1>
             </Widget.Header>
             <Widget.Content>
-                <p>Você Acertou 
+                <p>Você Acertou 😁 
                     {' '}
                     {results.reduce((somatoriaAtual, resultAtual) => {
                     const isAcerto = resultAtual === true
