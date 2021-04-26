@@ -60,8 +60,6 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1>Finanças na prática</h1>
-
-            <p>Aqui seria alguma coisa por enquanto um teste 🐱‍👤</p>
           </Widget.Content>
         </Widget>
         <Footer />
